@@ -6,6 +6,89 @@
     </head>
     <body>
 
+        <script>
+            let name = prompt("Who are you?");
+            alert("Hello, " + name);
+            console.log(name);
+        </script>
+        
+        <p style="background-color: gray; color: red">
+            Your Location?
+        </p>
+        
+        <script>
+            let place = prompt("Where are you from");
+            alert(place + " sounds like a lovely place!");
+            console.log(place);
+        </script>
+        
+        <p style="background-color: black; color: orange">
+            Whats your food of choice?
+        </p>
+        
+        <script>
+            let food = prompt("What's your favorite food?");
+            alert("Yum! I love " + food);
+            console.log(food);
+        </script>
+        
+        <p style="background-color: black; color: red">
+            What is my favorite car?
+        </p>
+        
+        <script>
+            let car = prompt("What is your favorite car?");
+            alert(car + " Maybe, but that seems slow");
+            console.log(car);
+        </script>
+        
+        <script>
+            let userName = prompt("What is your name?");
+            alert("Whats up " + userName + "! Welcome to my site!");
+        
+            let questions = [
+                "Is Eugene in your 201 class? (yes/no)",
+                "Does Eugene wear glasses? (yes/no)",
+                "Is he a Millionare? (yes/no)",
+                "Has Eugene been to Outerspace? (yes/no)",
+                "Does Eugene know what he's doing in class? (yes/no)"
+            ];
+        
+            let answers = [
+                "yes",
+                "yes",
+                "no",
+                "no",
+                "no"
+            ];
+        
+            function askQuestion(question, answer) {
+                let userAnswer = prompt(question).toLowerCase();
+        
+                if (userAnswer === "y") {
+                    userAnswer = "yes";
+                }
+                if (userAnswer === "n") {
+                    userAnswer = "no";
+                }
+        
+                if (userAnswer === answer) {
+                    alert("Yup!");
+                } else {
+                    alert("Nope!");
+                }
+            }
+        
+            // Call the function for each question and answer.
+            for (let i = 0; i < questions.length; i++) {
+                askQuestion(questions[i], answers[i]);
+            }
+        
+        </script>
+        
+
+
+
         <header>
             <h1> Who is Eugene</h1>
         </header>
@@ -13,20 +96,23 @@
         <main>
 
             <p>
-                Eugene likes pizza and hotdogs
+                I have 16 years of mixed IT industry experience. Eugene is new to the coding enviroment, this current project will help him learn better HTML CSS and JAVASCRIPT
+            
             </p>
 
-            <h2> How good is Duke</h2>
+            <h2> Some of Eugene's Professional Traits</h2>
             <ul>
-                <li>Cuddle Puddle</li>
-                <li>Listens</li>
-                <li>Protector</li>
+                <li>Interested in new technologies</li>
+                <li>Proactive and takes initiative</li>
+                <li>Organized and efficient</li>
+                <li>Good communicator</li>
+                <li>Valuable asset to a team</li>
             </ul>
 
-            <h2>Who is Duke</h2>
+            <h2>Favorite Video Games</h2>
             <ol>
-                <li>Mix Breed</li>
-                <li>54 lbs</li>
+                <li>Diablo 4</li>
+                <li>Call of Duty MW2</li>
             </ol>
         
 
@@ -34,7 +120,7 @@
         </main>
 
         <footer>
-            Copywrite 2023
+            Copywrite 2023 - 2024
         </footer>
     </body>
 
