@@ -15,7 +15,7 @@ This page will be able answering questions about and getting to know Eugene
 
 ### Light House Accessibility Report Score
 
-![Lighthouse](https://ibb.co/0hTkZ76)
+<a href="https://ibb.co/0hTkZ76"><img src="https://i.ibb.co/0hTkZ76/lab-2-light-house.png" alt="lab-2-light-house" border="0"></a>
 
 * Provide a screenshot of your score after running a
 Lighthouse Accessibility report.
